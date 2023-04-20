@@ -1,0 +1,10 @@
+.urlap {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.elem {
+    display: flex;
+    flex-direction: column;
+}

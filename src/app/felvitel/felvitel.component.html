@@ -1,0 +1,28 @@
+<app-table></app-table>
+<form name="form" (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <div class="container">
+    <hr />
+    <div class="row">
+      <div class="col-md-12">
+        <span>Szakdolgozat címe</span>
+        <input type="text" class="form-control" name="cimInput" [(ngModel)]="cim"/>
+      </div>
+      <div class="col-md-12">
+        <span>Készítők neve</span> <input type="text" class="form-control" name="keszitokInput" [(ngModel)]="keszitok"/>
+      </div>
+      <div class="col-md-12">
+        <span>Az oldal elérhetősége</span>
+        <input type="text" class="form-control" name="elerhetosegInput" [(ngModel)]="elerhetoseg"/>
+      </div>
+      <div class="col-md-12">
+        <span>GitHub elérhetőség</span>
+        <input type="text" class="form-control" name="githubInput" [(ngModel)]="github"/>
+      </div>
+      <div class="col-md-12">
+        <br>
+        <button class="btn btn-primary" type="submit">Új</button>
+      </div>
+    </div>
+  </div>
+</form>
+

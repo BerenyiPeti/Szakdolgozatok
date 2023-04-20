@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-striped">
+        <thead style="background-color: black; color: white">
+          <tr>
+            <th>Szakdolgozat címe</th>
+            <th>Készítők neve</th>
+            <th>GitHub link</th>
+            <th>
+              Szakdolgozat <br />
+              elérhetősége
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let sor of adatok">
+            <td>{{ sor.cim }}</td>
+            <td>{{ sor.keszitok }}</td>
+            <td>{{ sor.github }}</td>
+            <td>{{ sor.elerhetoseg }}</td>
+            <td>
+              <button class="glyphicon glyphicon-pencil"></button>
+              <button class="glyphicon glyphicon-remove-sign"></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
