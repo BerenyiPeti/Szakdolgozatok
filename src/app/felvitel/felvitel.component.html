@@ -20,7 +20,8 @@
       </div>
       <div class="col-md-12">
         <br>
-        <button class="btn btn-primary" type="submit">Új</button>
+        <button *ngIf="!modositas" class="btn btn-primary" type="submit">Új</button>
+        <button *ngIf="modositas" class="btn btn-success" type="submit">Módosítás</button>
       </div>
     </div>
   </div>

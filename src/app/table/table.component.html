@@ -21,8 +21,8 @@
             <td>{{ sor.github }}</td>
             <td>{{ sor.elerhetoseg }}</td>
             <td>
-              <button class="glyphicon glyphicon-pencil"></button>
-              <button class="glyphicon glyphicon-remove-sign"></button>
+              <button (click)="onModositas(sor)" class="btn btn-primary">módosítás</button>
+              <button (click)="onTorles(sor)" class="btn btn-danger">törlés</button>
             </td>
           </tr>
         </tbody>

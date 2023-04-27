@@ -12,12 +12,25 @@ export class TableService {
         return this.rows.slice()
     }
 
+    setRows(row: Row[]) {
+        this.rows = row;
+        //console.log(this.lines);
+        this.dataChanged.next(this.rows.slice());
+      }
+
     newRow(newRow: Row) {
         console.log("newrow:");
         console.log(newRow);
         this.rows.push(newRow);
         this.dataChanged.next(this.rows.slice());
         console.log(this.rows);
+    }
+
+    editRow() {
+
+    }
+
+    deleteRow() {
 
     }
 
